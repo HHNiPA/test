@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, viewport-fit=cover">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Ký ipa IOS HHNiOS</title>
+    <link rel="shortcut icon" type="image/png" href="https://hhnipa.github.io/repo/CydiaIcon.png">
     <script type="text/javascript" src="js/vue.min.js"></script>
     <script type="text/javascript" src="js/axios.min.js"></script>
     <script type="text/javascript" src="https://sign.ipasign.cc/js/index.js"></script>
@@ -154,7 +155,6 @@
 
             <nav class="navbar navbar-dark bg-info navbar-expand-lg"><a href="#" target="_self" class="navbar-brand">HHN iOS</a></nav>
             </p>
-            <br>
 
                 <div class="row mt-5">
                     <div class="col-sm-12 col-md-10 offset-md-1">
@@ -163,10 +163,13 @@
                                 <h4 class="alert-heading">Ký và tải Ứng dụng trực tiếp trên Iphone - Ipad của bạn !</h4>
                                 <p>Bằng cách chọn tệp và nhấn <span class="badge badge-secondary">Ký ngay bây giờ!</p>
                                 <p>Trang Web sẽ không lưu dữ liệu hoặc phân phối tệp của bạn sau quá trình ký.</p>
+                                <p>Đây không phải là ông cụ lưu trữ lâu dài nên ipa sẽ tự động bị xóa sau 15 phút.</p>
+                                <p>Dung lượng tải lên không quá 300mb.</p>
                                 <p>Nhóm Zalo lấy chứng chỉ <span class="badge badge-secondary"> <a class="link" href="https://zalo.me/g/mribpu953">Chiasejb</a></span> </p>
                             </div>
                         </transition>
-
+                        <br>
+                        <br>
                         <div class="card">
                             <div class="card-body" v-show="showStep1">
                                 <h4 class="card-title">Chọn tệp của bạn</h4>
@@ -257,11 +260,11 @@
                                 <h4 class="card-title">Cài đặt ứng dụng</h4>
                                 <div class="row">
                                     <div class="col-sm-4">
-                                        <h6>Quét mã này bằng máy ảnh</h6>
+                                        <h6>Quét mã này bằng Camera</h6>
                                         <div id="qrcode" style="width:100px; height:100px; margin-top:15px;"></div>
                                     </div>
                                     <div class="col-sm-8">
-                                        <h6>Sao chép và gửi liên kết bên dưới !</h6>
+                                        <h6>Sao chép hoặc gửi liên kết bên dưới !</h6>
                                         <a :href="download" target="_self" class="d-block mx-auto">{{download}}</a>
                                         <div style="margin-top: 48px;"><a :href="download_ipa">Tải xuống IPA</a></div>
                                     </div>
