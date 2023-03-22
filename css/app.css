@@ -6216,7 +6216,6 @@ input[type=submit].btn-block {
 }
 
 .card {
-    position: relative;
     display: no;
     flex-direction: column;
     min-width: 0;
