@@ -21,6 +21,7 @@ h3 {
     -webkit-background-clip: text;
     color: transparent;
     background-image: linear-gradient(to top right, #ffffff77, #ffffff);
+    z-index: 1;
 }
 .text1 {
     display: block;
@@ -33,7 +34,7 @@ h3 {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    background-image: linear-gradient(to top right, #00ffd577, #00ffd5);
+    background-image: linear-gradient(to top right, #ffffffbe, #00ffaa);
 }
 .text2 {
     display: block;
@@ -47,6 +48,7 @@ h3 {
     -webkit-background-clip: text;
     color: transparent;
     background-image: linear-gradient(to top right, #00ff62, #ffffff);
+    z-index: 1;
 }
 .text-3 {
     background-clip: text;
@@ -58,17 +60,27 @@ h3 {
 .text4 {
     display: block;
     font-size: 2em;
-    margin-block-start: 9.5em;
+    margin-block-start: 1em;
     margin-block-end: 0em;
     margin-inline-start: 20px;
-    margin-inline-end: 2px;
+    margin-inline-end: 0px;
     font-weight: bold;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     background-image: linear-gradient(to top right, #a6d9fc, #ffffff);
 }
-
+.text5 {
+    display: block;
+    font-size: 1em;
+    margin-block-start: 1em;
+    margin-block-end: 0em;
+    font-weight: bold;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to top right, #a6dafc48, #ffffff5d);
+}
 
 
 .rounded-\[40px\] {
@@ -153,6 +165,10 @@ user agent stylesheet
 nav {
     display: block;
 }
+.navtxt1 {
+    color: #007bff;
+    font-size: 15px;
+}
 .nav__link {
     display: flex;
     flex-direction: column;
@@ -214,11 +230,22 @@ nav {
 }
 .tab {
     height: auto;
-    width: 30px;
+    width: 25px;
 }
 .icon {
     height: auto;
-    width: 70px;
+    max-width: 70px;
+    min-width: 40px;
+}
+.icon1 {
+    height: auto;
+    max-width: 2.9em;
+    min-width: none;
+    display: flex; /* Sử dụng flexbox để hiển thị các icon theo hàng ngang */
+    justify-content: space-between; /* Canh các icon cách đều nhau trên hàng ngang */
+    align-items: center; /* Canh các icon theo chiều dọc giữa container */
+    margin-right: 1px; /* Đặt khoảng cách giữa các icon */
+    margin-inline-start: 15px;
 }
 .info {
     color: #fff;
@@ -394,19 +421,20 @@ center {
     animation-delay: 3s, 1.5s;
     }
     body {
-        background: -webkit-linear-gradient(left, #2c6eac, #0022ff); /* từ trái sang phải*/
-        background: -o-linear-gradient(right, #006eff, #003cff); /* kết thúc phía bên phải */
-        background: -moz-linear-gradient(right, #ffffff, #0026ff); /* kết thúc phía bên phải */
-        background: linear-gradient(to right, #6955dd, #00ce90); /* chuyển động sang phía bên phải */
-        background-color: #041325; /* Bạn nên đặt màu nền đồng nhất phòng trường hợp không tải được màu nền đậm/nhạt dầntn  5555n*/
+        background: -webkit-linear-gradient(left, #2c6eac, #0022ff); 
+        background: -o-linear-gradient(right, #006eff, #003cff);
+        background: -moz-linear-gradient(right, #ffffff, #0026ff);
+        background: linear-gradient(to right, #09168dad, #00030200);
+        background-color: #041325;
     } 
     .hhn {
-            max-width: 70%;
+            max-width: 80%;
+            min-width: 40%;
             height: auto;
             border-radius: 70px;
-            position: absolute;
-            top: 30px;
-            right: 70px;
+            position: relative;
+            top: 40px;
+            right: 0px;
             display: block;
             margin: auto;
             transform: rotate(-12deg);
