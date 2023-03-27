@@ -31,6 +31,7 @@ text-decoration: none
     color: transparent;
     background-image: linear-gradient(to top right, #ffffff77, #00ff22);
     z-index: 1;
+    position: relative;
 }
 .px {
     padding-left: 2rem;
@@ -69,7 +70,22 @@ hr {
         </div>
     <br><br>
     <h4 class="text4">Xin chào, mình là</h4>
-    <h2 class="text2">Ninh</h2>
+    <div id="site-title">
+      <span class="blogtitle"></span><span class="typed-cursor">|</span>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+      <script>
+          var typed = new Typed(".blogtitle", {
+              strings: ['<h2 class="text2">Ninh</h2>', '<h2 class="text2">HHN iOS</h2>'],
+              startDelay: 300,
+              typeSpeed: 100,
+              loop: true,
+              backSpeed: 50,
+              showCursor: true
+          });
+      </script>
+  </div>
+  <br>
+  <br>
     <h3>Mình là người đam mê công nghệ thông tin. Và là học sinh của trường:</h3>
     <h4>THPT Trần Tất Văn</h4>
 <p></p>
