@@ -49,6 +49,7 @@ h3 {
     color: transparent;
     background-image: linear-gradient(to top right, #00ff62, #ffffff);
     z-index: 1;
+    position: absolute;
 }
 .text-3 {
     background-clip: text;
